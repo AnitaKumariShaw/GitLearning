@@ -54,7 +54,7 @@ public class CreateNodeExample {
 		 driver=new ChromeDriver();
 		 driver.navigate().to("https://www.fitternity.com/kamal's-fit-&-fab-fitness-vasanth-nagar");
 		childTest.log(Status.PASS, MarkupHelper.createLabel("Application url is opened", ExtentColor.BLUE));
-		 //simple comment
+		
 		 
 	}
 	
