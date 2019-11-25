@@ -46,7 +46,7 @@ public class CreateNodeExample {
 	
 	@Test(priority =0)
 	public void openBrowser() {
-		parentTest = extent.createTest("First Test Transaction");
+		parentTest = extent.createTest("First Test Transaction" + "\t" + "UniqueId:" + "1");
 		childTest = parentTest.createNode("Open Application URl" + "\n" + "UniqueId:"+ "123");
 		childTest.log(Status.PASS, MarkupHelper.createLabel("Browser is opened by Chrome driver", ExtentColor.BLUE));
 		System.setProperty("webdriver.chrome.driver", "E:\\E drive\\Librairies_Selenium\\chromedriver_win32_v77\\chromedriver.exe");
